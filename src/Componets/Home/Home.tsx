@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import Me from '../Images/me.jpg';
 import './Home.css';
 
@@ -36,12 +37,17 @@ const Home: React.FC = () => {
     <div className='home-page'>
       <div className='home'>
         <section className="about-me">
-          <div>
-          <h4 style={{color: 'rgb(0, 0, 155)', display: 'inline'}}>As of</h4><span style={{color: 'rgb(0, 0, 155)', display: 'inline'}} ref={timeEl} id="timeNow"></span>
-          <br/><br/>
-          <h1 style={{color: 'rgb(0, 0, 155)', display: 'inline'}}>Front-End Engineer</h1><p style={{display: 'inline'}}> with a tint of poetry, bursting with excitement about the future.</p>
+          <div className='text'>
+            <h4 style={{color: 'rgb(0, 0, 155)', display: 'inline'}}>As of</h4><span style={{color: 'rgb(0, 0, 155)', display: 'inline'}} ref={timeEl} id="timeNow"></span>
+            <br/><br/>
+            <h1 style={{color: 'rgb(0, 0, 155)', display: 'inline'}}>Front-End Engineer</h1><p style={{display: 'inline'}}> with a tint of poetry, bursting with excitement about the future.</p>
+          </div>
+
+          <div className='buttons'>
+            <Link to={'/projects'}>View Projects</Link>
           </div>
         </section>
+
 
         <section className="portrait">
           <img src={Me} alt='Me' />

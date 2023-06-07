@@ -1,5 +1,6 @@
 import React from 'react';
 import './Heading.css';
+import { Link } from 'react-router-dom';
 
 
 const Heading: React.FC = () => {
@@ -10,7 +11,8 @@ const Heading: React.FC = () => {
                     <h1>{`<Andrei Udeanu/>`}</h1>
                 </div>
                 <nav>
-                    <a>HOME</a>
+                    <Link to={'/'}>HOME</Link>
+                    <Link to={'/projects'}>PROJECTS</Link>
                 </nav>
             </div>
         </header>
