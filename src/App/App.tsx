@@ -1,5 +1,5 @@
 import React from 'react';
-import Pages from './Componets/Pages.tsx/Pages';
+import Pages from '../Componets/Pages/Pages';
 
 const App: React.FC = () => {
   return (
