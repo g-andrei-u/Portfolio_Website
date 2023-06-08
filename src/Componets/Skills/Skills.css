@@ -1,0 +1,27 @@
+.skills {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main-skills {
+    box-sizing: border-box;
+    grid-column: 1/2;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin: 8px 12px;
+}
+
+.skill img {
+    width: 40px;
+    margin: 0 5px 0 0;
+}
+

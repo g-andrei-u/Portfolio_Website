@@ -17,7 +17,7 @@ const Heading: React.FC = () => {
             </div>
         </header>
     )
-}
+};
 
 
 export default Heading;

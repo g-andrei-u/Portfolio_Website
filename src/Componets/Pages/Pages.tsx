@@ -4,17 +4,35 @@ import Home from '../Home/Home';
 import Heading from '../Common/Heading';
 import '../../Style/General.css'
 import Projects from '../Projects/Projects';
+import Project from '../Projects/Project/Project';
+import { projects } from '../Projects/Assets/data';
+import Footer from '../Common/Footer';
+import Skills from '../Skills/Skills';
 
 
 const Pages: React.FC = () => {
   return (
   <>
     <BrowserRouter>
-    <Heading />
+      <Heading />
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/projects' element={<Projects/>} />
+        {projects.map((project) => (
+          <Route path={project.path} element={
+            <Project 
+            title={project.title} 
+            desc={project.desc} 
+            image={project.image} 
+            stack={project.stack}
+            projectLink={project.projectLink} 
+            codeLink={project.codeLink} 
+            />
+          } />
+        ))}
+        <Route path='/skills' element={<Skills/>} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   </>
   )
