@@ -16,3 +16,16 @@ a {
     border-radius: 4px;
     margin: 0 3px;
 }
+
+@media screen and (max-width: 480px) {
+    
+    .buttons  {
+        margin: 10px 12px;
+    }
+    
+    .buttons a {
+        font-size: 16px;
+        padding: 2px 3px;
+        margin: 0 5px;
+    }
+}

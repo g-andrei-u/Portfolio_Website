@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         <footer>
             <div className='footer'>
                 <div>
-                    <h3 style={{fontSize: '16px'}}>Email:<Link style={{fontSize: '16px'}} to='mailto: udeanugheorgheandrei@gmail.com'>udeanugheorgheandrei@gmail.com</Link></h3>
+                    <h3>Email:<Link to='mailto: udeanugheorgheandrei@gmail.com'>udeanugheorgheandrei@gmail.com</Link></h3>
                 </div>
                 <div className='footer-links'>
                     <Link to='https://www.linkedin.com/in/andrei-udeanu/' target='_blank'>

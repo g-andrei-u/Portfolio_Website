@@ -36,3 +36,19 @@
     right: 32px;
     top: 3px;
 }
+
+
+@media screen and (max-width: 480px) {
+
+    .projects {
+        width: 80%;
+    }
+    
+    .project-link {
+        width: 65%;
+    }
+    
+    .project-arrow {
+        right: 35px;
+    }
+}

@@ -41,7 +41,7 @@ const Home: React.FC = () => {
             <h4 style={{color: 'rgb(0, 0, 155)', display: 'inline'}}>Date: </h4><span style={{color: 'rgb(0, 0, 155)', display: 'inline'}} ref={timeEl} id="timeNow"></span>
             <br/><br/>
             <h4 style={{display: 'inline'}}><h2 style={{display: 'inline'}}>Hi 👋🏻, </h2> my name is <h1 style={{display: 'inline', color: 'rgb(0, 120, 0)'}}>Andrei</h1> and I am </h4>
-            <h4 style={{display: 'inline'}}>passionate </h4><h1 style={{color: 'rgb(0, 0, 155)', display: 'inline'}}>Front-End Engineer</h1><h4 style={{display: 'inline'}}>converting blank pages into exciting applications</h4>
+            <h4 style={{display: 'inline'}}>a passionate </h4><h1 style={{color: 'rgb(0, 0, 155)', display: 'inline'}}>Front-End Engineer </h1><h4 style={{display: 'inline'}}>converting blank pages into exciting applications</h4>
           </div>
 
           <div className='buttons'>

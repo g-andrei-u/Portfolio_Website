@@ -25,3 +25,19 @@
     margin: 0 5px 0 0;
 }
 
+
+@media screen and (max-width: 640px) {
+    
+    .skills {
+        width: 80%;
+    }
+    
+    .skill {
+        margin: 4px 12px;
+    }
+    
+    .skill img {
+        width: 30px;
+    }
+}
+

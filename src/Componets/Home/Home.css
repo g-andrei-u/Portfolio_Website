@@ -47,3 +47,67 @@
     width: 300px;
     border-radius: 20px;
 }
+
+
+@media screen and (max-width: 640px) {
+    
+    .home {
+        width: 83%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .about-me {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .about-me p, .about-me h4 {
+        margin: 1px;
+    }
+    
+    .about-me h1 {
+        font-size: 28px;
+    }
+    
+    .about-me .text {
+        margin-bottom: 30px;
+    }
+    
+    .portrait {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-content: center;
+    }
+
+    .portrait img {
+        width: 200px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    
+    .home {
+        height: 80%;
+        width: 95%;
+    }
+
+    .about-me p, .about-me h4 {
+        margin: 0px;
+    }
+    
+    .about-me h1 {
+        font-size: 23px;
+    }
+
+    .about-me h2 {
+        font-size: 27px;
+    }
+
+
+    .portrait img {
+        width: 180px;
+        margin-bottom: 20px;
+    }
+}
