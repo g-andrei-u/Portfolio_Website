@@ -8,6 +8,7 @@ import Project from '../Projects/Project/Project';
 import { projects } from '../Projects/Assets/data';
 import Footer from '../Common/Footer';
 import Skills from '../Skills/Skills';
+import About from '../About/About';
 
 
 const Pages: React.FC = () => {
@@ -31,6 +32,7 @@ const Pages: React.FC = () => {
           } />
         ))}
         <Route path='/skills' element={<Skills/>} />
+        <Route path='/about' element={<About/>} />
       </Routes>
       <Footer />
     </BrowserRouter>

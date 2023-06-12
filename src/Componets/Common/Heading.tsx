@@ -19,6 +19,7 @@ const Heading: React.FC = () => {
                     <div className='nav'>
                         <Link to={'/'}>HOME</Link>
                         <Link to={'/projects'}>PROJECTS</Link>
+                        <Link to={'/about'}>ABOUT ME</Link>
                     </div>
 
                     <div className='hamburger'>
@@ -26,6 +27,7 @@ const Heading: React.FC = () => {
                         <div className= {hamburger ? 'hamburger-bar' : 'nav'}>
                             <Link to={'/'}>HOME</Link>
                             <Link to={'/projects'}>PROJECTS</Link>
+                            <Link to={'/about'}>ABOUT ME</Link>
                         </div>
                     </div>
                 </nav>

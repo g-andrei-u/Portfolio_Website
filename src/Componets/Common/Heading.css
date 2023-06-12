@@ -14,7 +14,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px 0 20px;
+    padding: 12px 20px 0 20px;
     width: 60%;
     height: 100%;
     border-radius: 25px;
@@ -23,7 +23,18 @@ header {
 .heading a {
     text-decoration: none;
     color: white;
-    margin: 0 8px;
+    padding: 3px;
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 3px solid white;
+    border-radius: 3px;
+}
+
+.heading a:hover {
+    background-color: white;
+    color: rgb(0, 0, 155);
+    transition: 200ms;
 }
 
 .hamburger {
@@ -46,16 +57,21 @@ header {
     position: fixed;
     top: 50px;
     left: 0%;
-    height: 30px;
+    height: 100px;
     width: 100%;
-    font-size: 18px;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
 }
 
 .hamburger-bar a {
-    margin: 0 10px;
+    font-size: 12px;
+    padding: 2px;
+    font-weight: 500;
+    border: 3px solid white;
+    border-radius: 3px;
+    margin: 4px 0;
 }
 
 
@@ -88,9 +104,5 @@ header {
 
     .heading h1 {
         font-size: 20px;
-    }
-
-    .heading a {
-        margin: 0 5px;
     }
 }
