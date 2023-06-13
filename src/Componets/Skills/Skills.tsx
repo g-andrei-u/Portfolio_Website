@@ -3,11 +3,11 @@ import './Skills.css';
 import js from '../Images/javascript.png';
 import ts from '../Images/Typescript.png';
 import react from '../Images/React.png';
-import html from '../Images/html5.png';
-import css from '../Images/CSS3.png';
+import html_css from '../Images/html_css.png';
 import redux from '../Images/redux.png';
 import router from '../Images/react-router.png';
 import bash from '../Images/bash.png';
+import vue from '../Images/Vue.png';
 
 
 const Skills: React.FC = () => {
@@ -18,10 +18,7 @@ const Skills: React.FC = () => {
                 <h2>Main Skills:</h2>
                 <div className="main-skills">
                     <div className="skill">
-                        <img src={html} /><h4 style={{color: 'rgb(0, 120, 0)'}}>HTML</h4>
-                    </div>
-                    <div className="skill">
-                        <img src={css} /><h4 style={{color: 'rgb(0, 120, 0)'}}>CSS</h4>
+                        <img id="img-html_css" src={html_css} /><h4 style={{color: 'rgb(0, 120, 0)'}}>HTML/CSS</h4>
                     </div>
                     <div className="skill">
                         <img src={js} /><h4 style={{color: 'rgb(0, 120, 0)'}}>JavaScript</h4>
@@ -31,6 +28,9 @@ const Skills: React.FC = () => {
                     </div>
                     <div className="skill">
                         <img src={react} /><h4 style={{color: 'rgb(0, 120, 0)'}}>React</h4>
+                    </div>
+                    <div className="skill">
+                        <img src={vue} /><h4 style={{color: 'rgb(0, 120, 0)'}}>Vue.js</h4>
                     </div>
                     <div className="skill">
                         <img src={redux} /><h4 style={{color: 'rgb(0, 120, 0)'}}>Redux</h4>
