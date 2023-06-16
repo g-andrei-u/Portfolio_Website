@@ -23,6 +23,12 @@ a {
     transition: 200ms;
 }
 
+.animation {
+    transition: 250ms;
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+}
+
 @media screen and (max-width: 480px) {
     
     .buttons  {

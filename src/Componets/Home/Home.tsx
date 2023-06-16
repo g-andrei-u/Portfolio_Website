@@ -2,12 +2,14 @@ import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Me from '../Images/me.jpg';
 import './Home.css';
+import { Animation } from '../Common/Animation';
 
 
 const Home: React.FC = () => {
 
+  const HomePage = useRef<HTMLDivElement>(null);
+  let timeElement = useRef<HTMLSpanElement>(null);
 
-  let timeEl = useRef<HTMLSpanElement>(null);
   const monthNames = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
   ];
@@ -22,8 +24,8 @@ const Home: React.FC = () => {
     let day = d.getDate();
     let month = monthNames[d.getMonth()];
     let year = d.getFullYear();
-    if (timeEl.current) {
-    timeEl.current.innerHTML = ` ${day} ${month} ${year} ${("0" + h).substr(-2)} ${("0" + m).substr(-2)} ${("0" + s).substr(-2)}`
+    if (timeElement.current) {
+    timeElement.current.innerHTML = ` ${day} ${month} ${year} ${("0" + h).substr(-2)} ${("0" + m).substr(-2)} ${("0" + s).substr(-2)}`
     }
   }
 
@@ -32,13 +34,15 @@ const Home: React.FC = () => {
     return () => {clearInterval(interval)}
   }, [])
 
+  Animation(HomePage)
+
 
   return (
     <div className='home-page'>
-      <div className='home'>
+      <div className='home' ref={HomePage}>
         <section className="about-me">
           <div className='text'>
-            <h4 style={{color: 'rgb(0, 0, 155)', display: 'inline'}}>Date: </h4><span style={{color: 'rgb(0, 0, 155)', display: 'inline'}} ref={timeEl} id="timeNow"></span>
+            <h4 style={{color: 'rgb(0, 0, 155)', display: 'inline'}}>Date: </h4><span style={{color: 'rgb(0, 0, 155)', display: 'inline'}} ref={timeElement} id="timeNow"></span>
             <br/><br/>
             <h4 style={{display: 'inline'}}><h2 style={{display: 'inline'}}>Hi 👋🏻, </h2> my name is <h1 style={{display: 'inline', color: 'rgb(0, 120, 0)'}}>Andrei</h1> and I am </h4>
             <h4 style={{display: 'inline'}}>a passionate </h4><h1 style={{color: 'rgb(0, 0, 155)', display: 'inline'}}>Front-End Engineer </h1><h4 style={{display: 'inline'}}>converting blank pages into exciting applications</h4>

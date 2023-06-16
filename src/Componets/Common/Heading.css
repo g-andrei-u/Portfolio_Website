@@ -5,6 +5,7 @@ header {
     height: 80px;
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 
 .heading {

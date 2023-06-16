@@ -2,6 +2,8 @@
     box-sizing: border-box;
     width: 75%;
     text-align: center;
+    opacity: 0.3;
+    transform: translateX(50%);
 }
 
 .project h1 {

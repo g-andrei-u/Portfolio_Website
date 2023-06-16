@@ -1,6 +1,8 @@
 .projects {
     width: 65%;
     text-align: center;
+    opacity: 0.3;
+    transform: translateX(50%);
 }
 
 .projects-links {
@@ -30,11 +32,20 @@
 
 .project-arrow {
     position: relative;
-    font-size: 35px;
     color: rgb(0, 0, 155);
     width: 0;
-    right: 32px;
-    top: 3px;
+    right: 40px;
+    top: 4px;
+    transition: 500ms ease-in;
+    opacity: 1;
+    font-size: 40px;
+}
+
+.arrow-animation {
+    transition: 500ms ease-out;
+    opacity: 0;
+    transform: translateX(-15px);
+    font-size: 30px;
 }
 
 

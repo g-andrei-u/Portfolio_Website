@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './Project.css';
 import { Link } from 'react-router-dom';
+import { Animation } from '../../Common/Animation';
 
 
 interface Props {
@@ -14,9 +15,13 @@ interface Props {
 
 const Project: React.FC<Props> = ( props: Props ) => {
 
+  const projectPage = useRef<HTMLDivElement>(null);
+
+  Animation(projectPage)
+
   return (
     <div className='home-page'>
-      <section className="project">
+      <section className="project" ref={projectPage}>
 
         <h1>{props.title}</h1>
         <div className="project-details">
