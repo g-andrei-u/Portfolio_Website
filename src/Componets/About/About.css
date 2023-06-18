@@ -33,6 +33,12 @@
     border-radius: 20px;
 }
 
+@media screen and (max-width: 900px) {
+    
+    .about {
+        width: 75%;
+    }
+}
 
 @media screen and (max-width: 640px) {
     

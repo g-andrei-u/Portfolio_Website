@@ -26,6 +26,7 @@ const Pages: React.FC = () => {
             desc={project.desc} 
             image={project.image} 
             stack={project.stack}
+            responsive={project.responsive}
             projectLink={project.projectLink} 
             codeLink={project.codeLink} 
             />

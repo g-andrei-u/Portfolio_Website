@@ -9,6 +9,7 @@ interface Props {
   desc: string,
   image: string,
   stack: string[],
+  responsive: boolean,
   projectLink: string,
   codeLink: string
 }
@@ -31,7 +32,8 @@ const Project: React.FC<Props> = ( props: Props ) => {
 
           <div className="project-description">
             <p><strong>Description: </strong>{props.desc}</p>
-            <p><strong>Made With: </strong><strong style={{color: 'rgb(0, 120, 0)',}}>{`{${props.stack}}`}</strong></p>
+            <p style={{margin: '0'}}><strong>Phone Responsive: </strong><strong>{props.responsive ? <strong style={{color: 'rgb(0, 120, 0)'}}>TRUE</strong> : <strong style={{color: 'red'}}>FALSE</strong>}</strong></p>
+            <p><strong>Made With: </strong><strong style={{color: 'rgb(0, 120, 0)'}}>{`{${props.stack}}`}</strong></p>
             <div className="buttons">
               <Link to={props.projectLink} target='_blank' >Visit Site</Link>
               <Link to={props.codeLink} target='_blank' >View Code</Link>

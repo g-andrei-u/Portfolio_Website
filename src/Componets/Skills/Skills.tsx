@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './Skills.css';
 import js from '../Images/javascript.png';
 import ts from '../Images/Typescript.png';
@@ -8,12 +8,19 @@ import redux from '../Images/redux.png';
 import router from '../Images/react-router.png';
 import bash from '../Images/bash.png';
 import vue from '../Images/Vue.png';
+import { Animation } from '../Common/Animation';
 
 
 const Skills: React.FC = () => {
+
+    const skillsPage = useRef<HTMLDivElement>(null)
+
+    Animation(skillsPage)
+
+
   return (
     <div className='home-page'>
-        <section className="skills">      
+        <section className="skills" ref={skillsPage}>   
             <div>
                 <h2>Main Skills:</h2>
                 <div className="main-skills">
@@ -41,6 +48,9 @@ const Skills: React.FC = () => {
             <div>
                 <h2>Other Skills:</h2>
                 <div className="other-skills">
+                <div className="skill">
+                        <img src={vue} /><h4 style={{color: 'rgb(0, 120, 0)'}}>Vue-Router</h4>
+                    </div>
                     <div className="skill">
                         <img src={router} /><h4 style={{color: 'rgb(0, 120, 0)'}}>React-Router</h4>
                     </div>
