@@ -52,7 +52,7 @@ const Projects: React.FC = () => {
 
                 <div className='' style={{backgroundColor: 'white'}} >
                     <h2 style={{display: 'inline', fontSize: '20px', color: 'rgb(0, 120, 0)'}}>COMING SOON: </h2>
-                    <h3 style={{display: 'inline', color: 'rgb(0, 0, 155)'}}>Vue.js App</h3>
+                    <h3 style={{display: 'inline', color: 'rgb(0, 0, 155)'}}>PHP Project</h3>
                 </div>
             </div>
         </section>

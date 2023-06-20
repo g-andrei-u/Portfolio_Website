@@ -13,8 +13,8 @@ const About: React.FC = () => {
 
         <section className="about-text">
           <div className='text'>
-            <h3 style={{color: '#1A25A4', display: 'inline'}}>Front-End Engineer</h3><h3 style={{display: 'inline'}}> with a tint of poetry, bursting with excitement about the future. I'm passionate about this dynamic and innovative industry, and I'm committed to continuous learning and growth. and I am </h3>
-            <h3 style={{display: 'inline'}}>I'm easy to work with and prioritize clear communication. I'm always open to new ideas and challenges and I'm eager to contribute my skills and creativity to the industry!</h3>
+            <h3 style={{color: '#1A25A4', display: 'inline'}}>Front-End Engineer</h3><p style={{display: 'inline'}}> with a tint of poetry, bursting with excitement about the future. I'm passionate about this dynamic and innovative industry, and I'm committed to continuous learning and growth.</p>
+            <p>I'm easy to work with and prioritize clear communication. I'm always open to new ideas and challenges and I'm eager to contribute my skills and creativity to the industry!</p>
           </div>
         </section>
       </div>

@@ -13,7 +13,7 @@ const Heading: React.FC = () => {
         <header>
             <div className='heading'>
                 <div>
-                    <h1>{`<Andrei Udeanu/>`}</h1>
+                    <h1><Link to={'/'}>{`<Andrei Udeanu/>`}</Link></h1>
                 </div>
                 <nav>
                     <div className='nav'>
