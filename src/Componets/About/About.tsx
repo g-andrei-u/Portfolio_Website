@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Me from '../Images/me.jpg';
 import './About.css';
+import { Animation } from '../Common/Animation';
+
 
 
 const About: React.FC = () => {
+  const aboutPage = useRef<HTMLDivElement>(null);
+
+  Animation(aboutPage);
+
+
   return (
     <div className='home-page'>
-      <div className='about'>
+      <div className='about' ref={aboutPage}>
         <section className="about-portrait">
           <img src={Me} alt='Me' />
         </section>
