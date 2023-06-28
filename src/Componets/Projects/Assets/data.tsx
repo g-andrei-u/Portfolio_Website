@@ -12,7 +12,7 @@ export const projects = [
         image: jobs,
         desc: 'This web app will create a job post based on your description and will appear alongside the other posts',
         stack: [' Vue.js ', 'TypeScript', ' Vue-Router '],
-        responsive: false,
+        responsive: true,
         projectLink: 'https://jobsplatform.netlify.app/',
         codeLink: 'https://github.com/g-andrei-u/Job_Posting_Platform'
     },

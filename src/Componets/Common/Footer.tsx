@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
                     <Link to='https://www.linkedin.com/in/andrei-udeanu/' target='_blank'>
                         <FaLinkedin />
                     </Link>
-                    <Link to='https://www.linkedin.com/in/andrei-udeanu/' target='_blank'>
+                    <Link to='https://github.com/g-andrei-u' target='_blank'>
                         <AiFillGithub />
                     </Link>
                 </div>

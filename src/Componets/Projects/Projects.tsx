@@ -4,34 +4,23 @@ import './Projects.css';
 import { TiChevronRightOutline } from 'react-icons/ti';
 import { projects } from './Assets/data';
 import { Animation } from '../Common/Animation';
+import vue from '../Images/Vue.png';
+import react from '../Images/React.png';
+import js from '../Images/javascript.png';
 
 
 const Projects: React.FC = () => {
 
     const projectsPage = useRef<HTMLDivElement>(null);
-    //const arrow = useRef<HTMLDivElement>(null);
 
-    /*useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-
-            entries.forEach((entrie) => {
-                if(entrie.isIntersecting) {
-    
-                    entrie.target.classList.add('arrow-animation');
-                }
-            });
-        });
-    
-        if (arrow.current) {
-          observer.observe(arrow.current);
-        }
-    
-        return () => {
-          if (arrow.current) {
-            observer.unobserve(arrow.current);
-          }
-        };
-    }, []);*/
+    const imageSource = (skills: string[]) => {
+      if (skills.includes(' Vue.js ')) {
+        return vue;
+      } else if (skills.includes(' React ')) {
+        return react;
+      }
+      return js;
+    };
 
     Animation(projectsPage);
 
@@ -40,15 +29,18 @@ const Projects: React.FC = () => {
         <section className="projects" ref={projectsPage}>
             <h2 style={{paddingBottom: '20px'}}>Projects:</h2>
             <div className='projects-links'>
-                {projects.map((project) => (
-                    <div className='project-link'>
-                        {/*<div className='project-arrow' style={{color: 'rgb(0, 120, 0)'}} ref={arrow}><TiChevronRightOutline /></div>*/}
+                {projects.map((project) => {
+                  const imageSrc = imageSource(project.stack);
+                    return (<div key={project.title} className='project-link'>
+                      <>
                         <AnimationElement />
                         <Link to={project.path}>
                             <h3>{project.title}</h3>
                         </Link>
-                    </div>
-                ))}
+                        <img src={imageSrc} alt="icon" />
+                      </>
+                    </div>)
+                })}
 
                 <div className='' style={{backgroundColor: 'white'}} >
                     <h2 style={{display: 'inline', fontSize: '20px', color: 'rgb(0, 120, 0)'}}>COMING SOON: </h2>

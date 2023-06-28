@@ -23,11 +23,25 @@
     margin: 15px 0;
 }
 
+.project-link:hover {
+    border: 3px solid rgb(0, 120, 0);
+    transition: 200ms;
+}
+
 .project-link a {
     text-decoration: none;
     text-align: center;
     color: white;
     width: 100%;
+}
+
+.project-link img {
+    width: 27px;
+    margin: 0;
+    position: relative;
+    left: 45px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(0, 0, 155);
 }
 
 .project-arrow {
@@ -52,11 +66,16 @@
 @media screen and (max-width: 480px) {
 
     .projects {
-        width: 80%;
+        width: 87%;
     }
     
     .project-link {
-        width: 65%;
+        width: 70%;
+    }
+
+    .project-link img {
+        position: absolute;
+        left: 88%;
     }
     
     .project-arrow {
