@@ -26,28 +26,31 @@ const Projects: React.FC = () => {
 
   return (
     <div className='home-page'>
-        <section className="projects" ref={projectsPage}>
-            <h2 style={{paddingBottom: '20px'}}>Projects:</h2>
-            <div className='projects-links'>
-                {projects.map((project) => {
-                  const imageSrc = imageSource(project.stack);
-                    return (<div key={project.title} className='project-link'>
-                      <>
-                        <AnimationElement />
-                        <Link to={project.path}>
-                            <h3>{project.title}</h3>
-                        </Link>
-                        <img src={imageSrc} alt="icon" />
-                      </>
-                    </div>)
-                })}
+      <section className="projects" ref={projectsPage}>
+        <h2 style={{paddingBottom: '20px'}}>Projects:</h2>
+        <div className='projects-links'>
+          {projects.map((project) => {
+            const imageSrc = imageSource(project.stack);
 
-                <div className='' style={{backgroundColor: 'white'}} >
-                    <h2 style={{display: 'inline', fontSize: '20px', color: 'rgb(0, 120, 0)'}}>COMING SOON: </h2>
-                    <h3 style={{display: 'inline', color: 'rgb(0, 0, 155)'}}>PHP Project</h3>
+            return (
+              <div key={project.title} className='project-link'>
+                <AnimationElement />
+                <Link to={project.path}>
+                  <h3>{project.title}</h3>
+                </Link>
+                <div className='project-stack'>
+                  <img src={imageSrc} alt="icon" />
                 </div>
-            </div>
-        </section>
+              </div>
+            )
+          })}
+
+          <div className='' style={{backgroundColor: 'white'}} >
+            <h2 style={{display: 'inline', fontSize: '20px', color: 'rgb(0, 120, 0)'}}>COMING SOON: </h2>
+            <h3 style={{display: 'inline', color: 'rgb(0, 0, 155)'}}>PHP Project</h3>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
