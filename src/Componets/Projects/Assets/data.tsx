@@ -3,6 +3,7 @@ import insta from '../../Images/insta.png';
 import ebike from '../../Images/ebike.png';
 import clone from '../../Images/SpaceX.png';
 import jobs from '../../Images/job_platform.png';
+import space from '../../Images/space_agency.png';
 
 
 export const projects = [
@@ -10,7 +11,7 @@ export const projects = [
         path: '/projects/jobs',
         title: 'Job Posting Platform',
         image: jobs,
-        desc: 'This web app will create a job post based on your description and will appear alongside the other posts',
+        desc: 'After login in, this web app will create a job post based on your description and will appear alongside the other posts',
         stack: [' Vue.js ', 'TypeScript', ' Vue-Router '],
         responsive: true,
         projectLink: 'https://jobsplatform.netlify.app/',
@@ -32,11 +33,22 @@ export const projects = [
         path: '/projects/insta',
         title: 'Instagram App',
         image: insta,
-        desc: 'A clone of Instagram, were I have put in a lot of Creativity inside the project and it was very fun working on it. It was a challenge at some point using React but i had a lot to learn from it!',
+        desc: 'A clone of Instagram, were I have put in a lot of Creativity inside the project and it was very fun working on it. It was a challenge at some point, but i had a lot to learn from it!',
         stack: [' React '],
         responsive: false,
         projectLink: 'https://customclone.netlify.app/',
         codeLink: 'https://github.com/g-andrei-u/Instagram_App'
+    },
+
+    {
+        path: '/projects/space',
+        title: 'Agency Landing Page',
+        image: space,
+        desc: 'A landing page with features created by php and a design created with sass',
+        stack: [' PHP ', ' Sass '],
+        responsive: false,
+        projectLink: 'https://thespaceagency.000webhostapp.com/Index.php',
+        codeLink: 'https://github.com/g-andrei-u/Space-Page'
     },
 
     {
@@ -52,9 +64,9 @@ export const projects = [
 
     {
         path: '/projects/ebikes',
-        title: 'Site Main page',
+        title: 'Shop Landing Page',
         image: ebike,
-        desc:  'A responsive Main Page with interactive features made for a company that rents electrical bikes in different european cities.',
+        desc:  'A responsive landing page with interactive features made for a company that rents electrical bikes in different european cities.',
         stack: [' Vanilla Javascript '],
         responsive: true,
         projectLink: 'https://g-andrei-u.github.io/Project_Ebikes/',

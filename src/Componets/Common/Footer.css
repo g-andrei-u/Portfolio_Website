@@ -35,6 +35,11 @@ footer {
     margin: 0 8px;
 }
 
+.footer a:hover {
+    color: rgb(232, 236, 0);
+    transition: 200ms;
+}
+
 @media screen and (max-width: 900px) {
     
     .footer {

@@ -8,6 +8,7 @@ import redux from '../Images/redux.png';
 import bash from '../Images/bash.png';
 import vue from '../Images/Vue.png';
 import php from '../Images/php.png';
+import sass from '../Images/sass.png';
 import { Animation } from '../Common/Animation';
 
 
@@ -26,6 +27,9 @@ const Skills: React.FC = () => {
                 <div className="main-skills">
                     <div className="skill">
                         <img id="img-html_css" src={html_css} /><h4 style={{color: 'rgb(0, 120, 0)'}}>HTML/CSS</h4>
+                    </div>
+                    <div className="skill">
+                        <img src={sass} /><h4 style={{color: 'rgb(0, 120, 0)'}}>Sass</h4>
                     </div>
                     <div className="skill">
                         <img src={js} /><h4 style={{color: 'rgb(0, 120, 0)'}}>JavaScript</h4>

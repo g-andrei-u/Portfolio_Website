@@ -7,6 +7,7 @@ import { Animation } from '../Common/Animation';
 import vue from '../Images/Vue.png';
 import react from '../Images/React.png';
 import js from '../Images/javascript.png';
+import php from '../Images/php.png';
 
 
 const Projects: React.FC = () => {
@@ -18,6 +19,8 @@ const Projects: React.FC = () => {
         return vue;
       } else if (skills.includes(' React ')) {
         return react;
+      } else if (skills.includes(' PHP ')) {
+        return php;
       }
       return js;
     };
