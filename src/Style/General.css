@@ -8,18 +8,32 @@ a {
 
 .buttons a {
     text-decoration: none;
-    color: rgb(0, 120, 0);
     font-size: 14px;
     font-weight: 700;
     padding: 2px 3px;
-    border: 4px solid rgb(0, 0, 155);
     border-radius: 4px;
     margin: 0 3px;
 }
 
-.buttons a:hover {
+.white a {
+    color: rgb(0, 120, 0);
+    border: 4px solid rgb(0, 0, 155);
+}
+
+.white a:hover {
     color: rgb(0, 120, 0);
     border: 4px solid rgb(0, 120, 0);
+    transition: 200ms;
+}
+
+.black a {
+    color: #df007c;
+    border: 4px solid #70e7d1;
+}
+
+.black a:hover {
+    color: #df007c;
+    border: 4px solid #df007c;
     transition: 200ms;
 }
 

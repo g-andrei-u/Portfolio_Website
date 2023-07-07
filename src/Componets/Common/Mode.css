@@ -1,0 +1,13 @@
+.mode {
+    position: fixed;
+    top: 15px;
+    right: 0;
+    z-index: 1;
+}
+
+@media screen and (max-width: 900px) {
+    
+    .mode {
+        display: none;
+    }
+}

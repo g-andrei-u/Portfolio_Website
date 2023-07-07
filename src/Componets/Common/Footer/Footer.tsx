@@ -5,10 +5,14 @@ import { FaLinkedin } from 'react-icons/fa';
 import { AiFillGithub } from 'react-icons/ai';
 
 
-const Footer: React.FC = () => {
+interface Props {
+    mode: boolean
+}
+
+const Footer: React.FC<Props> = (props: Props) => {
     return (
         <footer>
-            <div className='footer'>
+            <div className={props.mode ? 'footer footer-black' : 'footer footer-white'}>
                 <div>
                     <h3>Email:<Link to='mailto: udeanugheorgheandrei@gmail.com'>udeanugheorgheandrei@gmail.com</Link></h3>
                 </div>

@@ -1,0 +1,90 @@
+footer {
+  position: fixed;
+  bottom: -20px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px 15px 20px;
+  width: 60%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.footer-white {
+  background-color: rgb(0, 0, 155);
+  color: white;
+}
+.footer-white h3 {
+  font-size: 16px;
+}
+.footer-white h3 a {
+  font-size: 16px;
+}
+.footer-white h3 a {
+  font-size: 16px;
+}
+.footer-white a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  margin: 0 8px;
+}
+.footer-white a:hover {
+  color: rgb(232, 236, 0);
+  transition: 200ms;
+}
+
+.footer-black {
+  background-color: #70e7d1;
+  color: black;
+}
+.footer-black h3 {
+  font-size: 16px;
+}
+.footer-black h3 a {
+  font-size: 16px;
+}
+.footer-black a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  margin: 0 8px;
+}
+.footer-black a:hover {
+  color: #df007c;
+  transition: 200ms;
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .footer {
+    padding: 0px 20px 25px 20px;
+    width: 100%;
+    border-radius: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 0px 20px 25px 20px;
+  }
+  .footer h3 {
+    font-size: 12px;
+  }
+  .footer h3 a {
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=Footer.css.map */

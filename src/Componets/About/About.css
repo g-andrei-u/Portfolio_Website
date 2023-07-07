@@ -19,7 +19,8 @@
 
 .about-text h3 {
     margin: 2px;
-    font-weight: 500;
+    font-weight: 500; 
+    display: inline;
 }
 
 .about-portrait {

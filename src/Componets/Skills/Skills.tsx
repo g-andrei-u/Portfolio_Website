@@ -11,40 +11,43 @@ import php from '../Images/php.png';
 import sass from '../Images/sass.png';
 import { Animation } from '../Common/Animation';
 
+interface Props {
+    mode: boolean
+  }
 
-const Skills: React.FC = () => {
 
+const Skills: React.FC<Props> = (props: Props) => {
     const skillsPage = useRef<HTMLDivElement>(null)
 
     Animation(skillsPage)
 
 
   return (
-    <div className='home-page'>
+    <div className={props.mode ? 'home-page home-page-black' : 'home-page home-page-white'}>
         <section className="skills" ref={skillsPage}>   
             <div>
                 <h2>Proficient Skills:</h2>
                 <div className="main-skills">
                     <div className="skill">
-                        <img id="img-html_css" src={html_css} /><h4 style={{color: 'rgb(0, 120, 0)'}}>HTML/CSS</h4>
+                        <img id="img-html_css" src={html_css} /><h4 className='skill-name'>HTML/CSS</h4>
                     </div>
                     <div className="skill">
-                        <img src={sass} /><h4 style={{color: 'rgb(0, 120, 0)'}}>Sass</h4>
+                        <img src={sass} /><h4 className='skill-name'>Sass</h4>
                     </div>
                     <div className="skill">
-                        <img src={js} /><h4 style={{color: 'rgb(0, 120, 0)'}}>JavaScript</h4>
+                        <img src={js} /><h4 className='skill-name'>JavaScript</h4>
                     </div>
                     <div className="skill">
-                        <img src={ts} /><h4 style={{color: 'rgb(0, 120, 0)'}}>TypeScript</h4>
+                        <img src={ts} /><h4 className='skill-name'>TypeScript</h4>
                     </div>
                     <div className="skill">
-                        <img src={php} /><h4 style={{color: 'rgb(0, 120, 0)'}}>PHP</h4>
+                        <img src={php} /><h4 className='skill-name'>PHP</h4>
                     </div>
                     <div className="skill">
-                        <img src={react} /><h4 style={{color: 'rgb(0, 120, 0)'}}>React</h4>
+                        <img src={react} /><h4 className='skill-name'>React</h4>
                     </div>
                     <div className="skill">
-                        <img src={vue} /><h4 style={{color: 'rgb(0, 120, 0)'}}>Vue.js</h4>
+                        <img src={vue} /><h4 className='skill-name'>Vue.js</h4>
                     </div>
                 </div>
             </div>
@@ -53,10 +56,10 @@ const Skills: React.FC = () => {
                 <h2>Familiar Skills:</h2>
                 <div className="other-skills">
                     <div className="skill">
-                        <img src={redux} /><h4 style={{color: 'rgb(0, 120, 0)'}}>Redux</h4>
+                        <img src={redux} /><h4 className='skill-name'>Redux</h4>
                     </div>
                     <div className="skill">
-                        <img src={bash} /><h4 style={{color: 'rgb(0, 120, 0)'}}>Bash</h4>
+                        <img src={bash} /><h4 className='skill-name'>Bash</h4>
                     </div>
                 </div>
             </div>

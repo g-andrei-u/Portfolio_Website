@@ -5,7 +5,11 @@ import './Home.css';
 import { Animation } from '../Common/Animation';
 
 
-const Home: React.FC = () => {
+interface Props {
+  mode: boolean
+}
+
+const Home: React.FC<Props> = (props: Props) => {
 
   const HomePage = useRef<HTMLDivElement>(null);
   let timeElement = useRef<HTMLSpanElement>(null);
@@ -38,18 +42,18 @@ const Home: React.FC = () => {
 
 
   return (
-    <div className='home-page'>
+    <div className={props.mode ? 'home-page home-page-black' : 'home-page home-page-white'}>
       <div className='home' ref={HomePage}>
         <section className="about-me">
           <div className='text'>
-            <h4 style={{color: 'rgb(0, 0, 155)', display: 'inline'}}>Date: </h4><span style={{color: 'rgb(0, 0, 155)', display: 'inline'}} ref={timeElement} id="timeNow"></span>
+            <h4 className='date'>Date: </h4><span className='date' ref={timeElement} id="timeNow"></span>
             <br/><br/>
-            <h4 style={{display: 'inline'}}><h2 style={{display: 'inline'}}>Hi 👋🏻, </h2> my name is <h1 style={{display: 'inline', color: 'rgb(0, 120, 0)'}}>Andrei</h1> and I am </h4>
-            <h4 style={{display: 'inline'}}>a passionate </h4><h1 style={{color: 'rgb(0, 0, 155)', display: 'inline'}}>Front-End Engineer </h1><h4 style={{display: 'inline'}}>converting blank pages into exciting applications</h4>
+            <h4 style={{display: 'inline'}}><h2 style={{display: 'inline'}}>Hi 👋🏻, </h2> my name is <h1 className='name'>Andrei</h1> and I am </h4>
+            <h4 style={{display: 'inline'}}>a passionate </h4><h1 className='date'>Front-End Engineer </h1><h4 style={{display: 'inline'}}>converting blank pages into exciting applications</h4>
           </div>
 
-          <div className='buttons'>
-            <Link to={'/projects'}>View Projects</Link>
+          <div className={props.mode ? "buttons black" : "buttons white"}>
+            <Link to={'/projects'}>View Projets</Link>
             <Link to={'/skills'}>View Skills</Link>  
           </div>
         </section>

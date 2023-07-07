@@ -10,7 +10,11 @@ import js from '../Images/javascript.png';
 import php from '../Images/php.png';
 
 
-const Projects: React.FC = () => {
+interface Props {
+  mode: boolean
+}
+
+const Projects: React.FC<Props> = (props: Props) => {
 
     const projectsPage = useRef<HTMLDivElement>(null);
 
@@ -28,7 +32,7 @@ const Projects: React.FC = () => {
     Animation(projectsPage);
 
   return (
-    <div className='home-page'>
+    <div className={props.mode ? 'home-page home-page-black' : 'home-page home-page-white'}>
       <section className="projects" ref={projectsPage}>
         <h2 style={{paddingBottom: '20px'}}>Projects:</h2>
         <div className='projects-links'>
@@ -48,9 +52,9 @@ const Projects: React.FC = () => {
             )
           })}
 
-          <div className='' style={{backgroundColor: 'white'}} >
-            <h2 style={{display: 'inline', fontSize: '20px', color: 'rgb(0, 120, 0)'}}>COMING SOON: </h2>
-            <h3 style={{display: 'inline', color: 'rgb(0, 0, 155)'}}>PHP Project</h3>
+          <div>
+            <h2 className='coming-soon'>COMING SOON: </h2>
+            <h3 className='coming-project'>Laravel Project</h3>
           </div>
         </div>
       </section>
@@ -78,7 +82,7 @@ const AnimationElement: React.FC = () => {
           };
     }, []);
   
-    return <div className='project-arrow' style={{color: 'rgb(0, 120, 0)'}} ref={arrowRef}><TiChevronRightOutline /></div>;
+    return <div className='project-arrow' ref={arrowRef}><TiChevronRightOutline /></div>;
 };
 
 export default Projects;
