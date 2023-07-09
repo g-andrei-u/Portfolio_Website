@@ -9,6 +9,7 @@ import bash from '../Images/bash.png';
 import vue from '../Images/Vue.png';
 import php from '../Images/php.png';
 import sass from '../Images/sass.png';
+import laravel from '../Images/Laravel.png';
 import { Animation } from '../Common/Animation';
 
 interface Props {
@@ -55,6 +56,9 @@ const Skills: React.FC<Props> = (props: Props) => {
             <div>
                 <h2>Familiar Skills:</h2>
                 <div className="other-skills">
+                    <div className="skill">
+                        <img src={laravel} /><h4 className='skill-name'>Laravel</h4>
+                    </div>
                     <div className="skill">
                         <img src={redux} /><h4 className='skill-name'>Redux</h4>
                     </div>
