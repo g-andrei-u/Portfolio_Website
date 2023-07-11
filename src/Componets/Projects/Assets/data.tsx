@@ -47,7 +47,7 @@ export const projects = [
         desc: 'A landing page with features created by php and a design created with sass',
         stack: [' PHP ', ' Sass '],
         responsive: false,
-        projectLink: 'https://thespaceagency.000webhostapp.com/Index.php',
+        projectLink: 'https://thespaceagency.000webhostapp.com/',
         codeLink: 'https://github.com/g-andrei-u/Space-Page'
     },
 
