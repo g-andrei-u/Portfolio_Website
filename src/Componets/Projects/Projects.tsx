@@ -8,6 +8,9 @@ import vue from '../Images/Vue.png';
 import react from '../Images/React.png';
 import js from '../Images/javascript.png';
 import php from '../Images/php.png';
+import ts from '../Images/Typescript.png';
+import redux from '../Images/redux.png';
+import sass from '../Images/sass.png';
 
 
 interface Props {
@@ -21,12 +24,23 @@ const Projects: React.FC<Props> = (props: Props) => {
     const imageSource = (skills: string[]) => {
       if (skills.includes(' Vue.js ')) {
         return vue;
-      } else if (skills.includes(' React ')) {
+      } else if (skills.includes(' React.js ')) {
         return react;
       } else if (skills.includes(' PHP ')) {
         return php;
       }
       return js;
+    };
+
+    const secondImageSource = (skills: string[]) => {
+      if (skills.includes(' TypeScript ')) {
+        return ts;
+      } else if (skills.includes(' Redux ')) {
+        return redux;
+      } else if (skills.includes(' Sass ')) {
+        return sass;
+      }
+      return '';
     };
 
     Animation(projectsPage);
@@ -38,6 +52,7 @@ const Projects: React.FC<Props> = (props: Props) => {
         <div className='projects-links'>
           {projects.map((project) => {
             const imageSrc = imageSource(project.stack);
+            const secondImageSrc = secondImageSource(project.stack);
 
             return (
               <div key={project.title} className='project-link'>
@@ -46,7 +61,8 @@ const Projects: React.FC<Props> = (props: Props) => {
                   <h3>{project.title}</h3>
                 </Link>
                 <div className='project-stack'>
-                  <img src={imageSrc} alt="icon" />
+                  <img className={secondImageSrc === '' ? 'none' : ''} src={imageSrc} alt="icon" />
+                  <img style={{padding: "0 0 5px 0"}} src={secondImageSrc} alt="icon" />
                 </div>
               </div>
             )

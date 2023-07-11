@@ -32,14 +32,23 @@
 .project-stack {
     box-sizing: border-box;
     width: 0;
+    display: flex;
+    align-items: center;
 }
 
 .project-stack img {
     width: 27px;
+    height: 27px;
+    object-fit: contain;
     margin: 0;
     position: relative;
     left: 20px;
-    padding-bottom: 5px;
+    padding: 0px 10px 5px 0px;
+}
+
+
+.none {
+    padding: 0px 0px 5px 0px !important;
 }
 
 .project-arrow {
@@ -64,7 +73,7 @@
 @media screen and (max-width: 480px) {
 
     .projects {
-        width: 87%;
+        width: 90%;
     }
     
     .project-link {
@@ -73,6 +82,7 @@
 
     .project-link img {
         position: absolute;
+        display: none;
         left: 88%;
     }
     

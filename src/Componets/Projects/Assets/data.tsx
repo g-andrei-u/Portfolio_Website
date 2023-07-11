@@ -12,7 +12,7 @@ export const projects = [
         title: 'Job Posting Platform',
         image: jobs,
         desc: 'After login in, this web app will create a job post based on your description and will appear alongside the other posts',
-        stack: [' Vue.js ', 'TypeScript', ' Vue-Router '],
+        stack: [' Vue.js ', ' TypeScript ', ' Vue-Router '],
         responsive: true,
         projectLink: 'https://jobsplatform.netlify.app/',
         codeLink: 'https://github.com/g-andrei-u/Job_Posting_Platform'
@@ -23,7 +23,7 @@ export const projects = [
         title: 'Ecommerce Website',
         image: ecom,
         desc: 'A ecommerce web app where you can choose to buy anything from a catalog of products.',
-        stack: [' React ', ' Redux ', ' React-Router '],
+        stack: [' React.js ', ' Redux ', ' React-Router '],
         responsive: true,
         projectLink: 'https://valueondemand.netlify.app/',
         codeLink: 'https://github.com/g-andrei-u/Ecommerce_App'
@@ -34,7 +34,7 @@ export const projects = [
         title: 'Instagram App',
         image: insta,
         desc: 'A clone of Instagram, were I have put in a lot of Creativity inside the project and it was very fun working on it. It was a challenge at some point, but i had a lot to learn from it!',
-        stack: [' React '],
+        stack: [' React.js '],
         responsive: false,
         projectLink: 'https://customclone.netlify.app/',
         codeLink: 'https://github.com/g-andrei-u/Instagram_App'

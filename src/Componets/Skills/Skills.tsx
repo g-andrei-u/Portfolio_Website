@@ -10,6 +10,7 @@ import vue from '../Images/Vue.png';
 import php from '../Images/php.png';
 import sass from '../Images/sass.png';
 import laravel from '../Images/Laravel.png';
+import node from '../Images/node.png';
 import { Animation } from '../Common/Animation';
 
 interface Props {
@@ -45,7 +46,10 @@ const Skills: React.FC<Props> = (props: Props) => {
                         <img src={php} /><h4 className='skill-name'>PHP</h4>
                     </div>
                     <div className="skill">
-                        <img src={react} /><h4 className='skill-name'>React</h4>
+                        <img src={node} /><h4 className='skill-name'>Node.js</h4>
+                    </div>
+                    <div className="skill">
+                        <img src={react} /><h4 className='skill-name'>React.js</h4>
                     </div>
                     <div className="skill">
                         <img src={vue} /><h4 className='skill-name'>Vue.js</h4>
