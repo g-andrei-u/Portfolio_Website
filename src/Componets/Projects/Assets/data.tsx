@@ -41,17 +41,6 @@ export const projects = [
     },
 
     {
-        path: '/projects/space',
-        title: 'Agency Landing Page',
-        image: space,
-        desc: 'A landing page with features created by php and a design created with sass',
-        stack: [' PHP ', ' Sass '],
-        responsive: false,
-        projectLink: 'https://thespaceagency.000webhostapp.com/',
-        codeLink: 'https://github.com/g-andrei-u/Space-Page'
-    },
-
-    {
         path: '/projects/clone',
         title: 'SpaceX Clone',
         image: clone,
@@ -71,5 +60,16 @@ export const projects = [
         responsive: true,
         projectLink: 'https://g-andrei-u.github.io/Project_Ebikes/',
         codeLink: 'https://github.com/g-andrei-u/Project_Ebikes'
+    },
+
+    {
+        path: '/projects/space',
+        title: 'Agency Landing Page',
+        image: space,
+        desc: 'A landing page with features created by php and a design created with sass',
+        stack: [' PHP ', ' Sass '],
+        responsive: false,
+        projectLink: 'https://thespaceagency.000webhostapp.com/',
+        codeLink: 'https://github.com/g-andrei-u/Space-Page'
     }
 ]
