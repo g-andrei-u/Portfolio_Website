@@ -52,17 +52,6 @@ export const projects = [
     },
 
     {
-        path: '/projects/ebikes',
-        title: 'Shop Landing Page',
-        image: ebike,
-        desc:  'A responsive landing page with interactive features made for a company that rents electrical bikes in different european cities.',
-        stack: [' Vanilla Javascript '],
-        responsive: true,
-        projectLink: 'https://g-andrei-u.github.io/Project_Ebikes/',
-        codeLink: 'https://github.com/g-andrei-u/Project_Ebikes'
-    },
-
-    {
         path: '/projects/space',
         title: 'Agency Landing Page',
         image: space,
@@ -71,5 +60,16 @@ export const projects = [
         responsive: false,
         projectLink: 'https://thespaceagency.000webhostapp.com/',
         codeLink: 'https://github.com/g-andrei-u/Space-Page'
+    },
+
+    {
+        path: '/projects/ebikes',
+        title: 'Shop Landing Page',
+        image: ebike,
+        desc:  'A responsive landing page with interactive features made for a company that rents electrical bikes in different european cities.',
+        stack: [' Vanilla Javascript '],
+        responsive: true,
+        projectLink: 'https://g-andrei-u.github.io/Project_Ebikes/',
+        codeLink: 'https://github.com/g-andrei-u/Project_Ebikes'
     }
 ]
