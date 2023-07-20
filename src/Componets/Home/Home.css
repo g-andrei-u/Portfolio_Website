@@ -34,15 +34,6 @@
   border: 4px solid rgb(0, 120, 0);
   transition: 200ms;
 }
-.home-page-white .coming-soon {
-  display: inline;
-  font-size: 20px;
-  color: rgb(0, 120, 0);
-}
-.home-page-white .coming-project {
-  display: inline;
-  color: rgb(0, 0, 155);
-}
 .home-page-white .project-stack img {
   border-bottom: 2px solid rgb(0, 0, 155);
 }
@@ -57,6 +48,14 @@
 }
 .home-page-white .about-text h3 {
   color: rgb(0, 0, 155);
+}
+.home-page-white .filter-buttons button {
+  background-color: white;
+  color: rgb(0, 120, 0);
+  border: 4px solid rgb(0, 0, 155);
+}
+.home-page-white .filter-buttons button:hover {
+  border: 4px solid rgb(0, 120, 0);
 }
 
 .home-page-black {
@@ -87,15 +86,6 @@
   border: 4px solid #df007c;
   transition: 200ms;
 }
-.home-page-black .coming-soon {
-  display: inline;
-  font-size: 20px;
-  color: #df007c;
-}
-.home-page-black .coming-project {
-  display: inline;
-  color: #70e7d1;
-}
 .home-page-black .project-stack img {
   border-bottom: 2px solid #70e7d1;
 }
@@ -110,6 +100,14 @@
 }
 .home-page-black .about-text h3 {
   color: #70e7d1;
+}
+.home-page-black .filter-buttons button {
+  background-color: black;
+  color: #df007c;
+  border: 4px solid #70e7d1;
+}
+.home-page-black .filter-buttons button:hover {
+  border: 4px solid #df007c;
 }
 
 .home {
@@ -150,6 +148,14 @@
 .portrait img {
   width: 300px;
   border-radius: 20px;
+}
+.portrait .show {
+  position: absolute;
+  top: 30%;
+  right: 33%;
+}
+.portrait .none {
+  display: none;
 }
 
 @media screen and (max-width: 900px) {

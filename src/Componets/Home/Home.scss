@@ -41,17 +41,6 @@
         }
     }
 
-    .coming-soon {
-        display: inline;
-        font-size: 20px;
-        color: rgb(0, 120, 0);
-    }
-
-    .coming-project {
-        display: inline;
-        color: rgb(0, 0, 155);
-    }
-
     .project-stack img {
         border-bottom: 2px solid rgb(0, 0, 155);
     }
@@ -70,6 +59,16 @@
 
     .about-text h3 {
         color: rgb(0, 0, 155);
+    }
+
+    .filter-buttons button {
+        background-color: white;
+        color: rgb(0, 120, 0);
+        border: 4px solid rgb(0, 0, 155);
+
+        &:hover {
+            border: 4px solid rgb(0, 120, 0);
+        }
     }
 }
 
@@ -108,17 +107,6 @@
         }
     }
 
-    .coming-soon {
-        display: inline;
-        font-size: 20px;
-        color: #df007c;
-    }
-
-    .coming-project {
-        display: inline;
-        color: #70e7d1;
-    }
-
     .project-stack img {
         border-bottom: 2px solid #70e7d1;
     }
@@ -137,6 +125,16 @@
 
     .about-text h3 {
         color: #70e7d1;
+    }
+
+    .filter-buttons button {
+        background-color: black;
+        color: #df007c;
+        border: 4px solid #70e7d1;
+
+        &:hover {
+            border: 4px solid #df007c;
+        }
     }
 }
 
@@ -181,6 +179,16 @@
     img {
         width: 300px;
         border-radius: 20px;
+    }
+
+    .show {
+        position: absolute;
+        top: 30%;
+        right: 33%
+    }
+
+    .none {
+        display: none;
     }
 }
 

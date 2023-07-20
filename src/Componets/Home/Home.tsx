@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, /*useState*/ } from 'react';
 import { Link } from 'react-router-dom';
 import Me from '../Images/me.jpg';
 import './Home.css';
@@ -11,6 +11,7 @@ interface Props {
 
 const Home: React.FC<Props> = (props: Props) => {
 
+  //const [hover, setHover] = useState(false);
   const HomePage = useRef<HTMLDivElement>(null);
   let timeElement = useRef<HTMLSpanElement>(null);
 
@@ -60,7 +61,8 @@ const Home: React.FC<Props> = (props: Props) => {
 
 
         <section className="portrait">
-          <img src={Me} alt='Me' />
+          <img /*onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}*/ src={Me} alt='Me' />
+          {/*<p className={hover ? 'show' : 'none'}>Contact Me!</p>*/}
         </section>
       </div>
     </div>

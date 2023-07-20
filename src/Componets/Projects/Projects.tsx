@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Projects.css';
 import { TiChevronRightOutline } from 'react-icons/ti';
@@ -19,38 +19,66 @@ interface Props {
 
 const Projects: React.FC<Props> = (props: Props) => {
 
-    const projectsPage = useRef<HTMLDivElement>(null);
+  const projectsPage = useRef<HTMLDivElement>(null);
+  const [filter, setFilter] = useState('');
 
-    const imageSource = (skills: string[]) => {
-      if (skills.includes(' Vue.js ')) {
-        return vue;
-      } else if (skills.includes(' React.js ')) {
-        return react;
-      } else if (skills.includes(' PHP ')) {
-        return php;
-      }
-      return js;
-    };
+  const filterProjects = projects.filter(project => {
+    if (filter === 'react') {
 
-    const secondImageSource = (skills: string[]) => {
-      if (skills.includes(' TypeScript ')) {
-        return ts;
-      } else if (skills.includes(' Redux ')) {
-        return redux;
-      } else if (skills.includes(' Sass ')) {
-        return sass;
-      }
-      return '';
-    };
+      return project.stack.includes(' React.js ');
+    } else if (filter === 'ts') {
 
-    Animation(projectsPage);
+      return project.stack.includes(' TypeScript ');
+    } else if (filter === 'js') {
+
+      return project.stack.includes(' Vanilla JavaScript ');
+    } else if (filter === 'php') {
+
+      return project.stack.includes(' PHP ');
+    } else {
+      return project
+    }
+  })
+
+
+  const imageSource = (skills: string[]) => {
+    if (skills.includes(' Vue.js ')) {
+      return vue;
+    } else if (skills.includes(' React.js ')) {
+      return react;
+    } else if (skills.includes(' PHP ')) {
+      return php;
+    }
+    return js;
+  };
+
+  const secondImageSource = (skills: string[]) => {
+    if (skills.includes(' TypeScript ')) {
+      return ts;
+    } else if (skills.includes(' Redux ')) {
+      return redux;
+    } else if (skills.includes(' Sass ')) {
+      return sass;
+    }
+    return '';
+  };
+
+  Animation(projectsPage);
 
   return (
     <div className={props.mode ? 'home-page home-page-black' : 'home-page home-page-white'}>
       <section className="projects" ref={projectsPage}>
-        <h2 style={{paddingBottom: '20px'}}>Projects:</h2>
+        <div className='filter-buttons'>
+          <h2>PROJECTS:</h2>
+          <button onClick={() => setFilter('all')}>All</button>
+          <button onClick={() => setFilter('react')}>React.js</button>
+          <button onClick={() => setFilter('ts')}>TypeScript</button>
+          <button onClick={() => setFilter('js')}>JavaScript</button>
+          <button onClick={() => setFilter('php')}>PHP</button>
+        </div>
+
         <div className='projects-links'>
-          {projects.map((project) => {
+          {filterProjects.map((project) => {
             const imageSrc = imageSource(project.stack);
             const secondImageSrc = secondImageSource(project.stack);
 
@@ -67,11 +95,6 @@ const Projects: React.FC<Props> = (props: Props) => {
               </div>
             )
           })}
-
-          <div>
-            <h2 className='coming-soon'>COMING SOON: </h2>
-            <h3 className='coming-project'>Laravel Project</h3>
-          </div>
         </div>
       </section>
     </div>

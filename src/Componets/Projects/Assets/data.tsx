@@ -4,6 +4,7 @@ import ebike from '../../Images/ebike.png';
 import clone from '../../Images/SpaceX.png';
 import jobs from '../../Images/job_platform.png';
 import space from '../../Images/space_agency.png';
+import restaurant from '../../Images/restaurant.png';
 
 
 export const projects = [
@@ -16,6 +17,17 @@ export const projects = [
         responsive: true,
         projectLink: 'https://jobsplatform.netlify.app/',
         codeLink: 'https://github.com/g-andrei-u/Job_Posting_Platform'
+    },
+
+    {
+        path: '/projects/restaurant',
+        title: 'Space Restaurant',
+        image: restaurant,
+        desc: 'A space-themed restaurant with a full menu and a good design',
+        stack: [' React.js ', ' TypeScript ', ' Sass '],
+        responsive: false,
+        projectLink: 'https://space-bones.netlify.app/',
+        codeLink: 'https://github.com/g-andrei-u/space_bones'
     },
 
     {
@@ -45,7 +57,7 @@ export const projects = [
         title: 'SpaceX Clone',
         image: clone,
         desc: 'A clone site of the official SpaceX Website, it is responsive and has the same interactive features as the Official site.',
-        stack: [' Vanilla Javascript '],
+        stack: [' Vanilla JavaScript '],
         responsive: true,
         projectLink: 'https://g-andrei-u.github.io/SpaceX_Site_Clone/',
         codeLink: 'https://github.com/g-andrei-u/SpaceX_Site_Clone'
@@ -67,7 +79,7 @@ export const projects = [
         title: 'Shop Landing Page',
         image: ebike,
         desc:  'A responsive landing page with interactive features made for a company that rents electrical bikes in different european cities.',
-        stack: [' Vanilla Javascript '],
+        stack: [' Vanilla JavaScript '],
         responsive: true,
         projectLink: 'https://g-andrei-u.github.io/Project_Ebikes/',
         codeLink: 'https://github.com/g-andrei-u/Project_Ebikes'

@@ -5,6 +5,30 @@
     transform: translateX(50%);
 }
 
+.filter-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.filter-buttons h2 {
+    margin-right: 8px;
+}
+
+.filter-buttons button {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 2px 3px;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+.filter-buttons button:hover {
+    cursor: pointer;
+    transition: 200ms;
+}
+
 .projects-links {
     display: flex;
     align-items: center;
@@ -88,5 +112,28 @@
     
     .project-arrow {
         right: 35px;
+    }
+
+    .filter-buttons {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+
+    .projects {
+        width: 95%;
+    }
+    
+    .project-link {
+        width: 75%;
+    }
+
+    .filter-buttons {
+        margin-bottom: 0;
+    }
+
+    .filter-buttons h2 {
+        font-size: 20px;
     }
 }
