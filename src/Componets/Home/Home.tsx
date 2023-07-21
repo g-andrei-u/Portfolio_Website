@@ -54,7 +54,7 @@ const Home: React.FC<Props> = (props: Props) => {
           </div>
 
           <div className={props.mode ? "buttons black" : "buttons white"}>
-            <Link to={'/projects'}>View Projets</Link>
+            <Link to={'/projects'}>View Projects</Link>
             <Link to={'/skills'}>View Skills</Link>  
           </div>
         </section>
