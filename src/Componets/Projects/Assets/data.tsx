@@ -9,6 +9,17 @@ import restaurant from '../../Images/restaurant.png';
 
 export const projects = [
     {
+        path: '/projects/restaurant',
+        title: 'Space Restaurant',
+        image: restaurant,
+        desc: 'A space-themed restaurant with a full menu and a good design',
+        stack: [' React.js ', ' TypeScript ', ' Sass '],
+        responsive: true,
+        projectLink: 'https://space-bones.netlify.app/',
+        codeLink: 'https://github.com/g-andrei-u/space_bones'
+    },
+    
+    {
         path: '/projects/jobs',
         title: 'Job Posting Platform',
         image: jobs,
@@ -17,17 +28,6 @@ export const projects = [
         responsive: true,
         projectLink: 'https://jobsplatform.netlify.app/',
         codeLink: 'https://github.com/g-andrei-u/Job_Posting_Platform'
-    },
-
-    {
-        path: '/projects/restaurant',
-        title: 'Space Restaurant',
-        image: restaurant,
-        desc: 'A space-themed restaurant with a full menu and a good design',
-        stack: [' React.js ', ' TypeScript ', ' Sass '],
-        responsive: false,
-        projectLink: 'https://space-bones.netlify.app/',
-        codeLink: 'https://github.com/g-andrei-u/space_bones'
     },
 
     {
