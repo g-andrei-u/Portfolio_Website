@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, /*useState*/ } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Me from '../Images/me.jpg';
 import './Home.css';
@@ -11,14 +11,23 @@ interface Props {
 
 const Home: React.FC<Props> = (props: Props) => {
 
-  //const [hover, setHover] = useState(false);
+  const [hover, setHover] = useState(false);
+  const theHover = useRef<HTMLParagraphElement>(null!);
   const HomePage = useRef<HTMLDivElement>(null);
   let timeElement = useRef<HTMLSpanElement>(null);
-
   const monthNames = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
   ];
 
+  useEffect(() => {
+    if (hover === true) {
+      theHover.current.classList.add('now');
+    }
+
+    if (hover === false) {
+      theHover.current.classList.remove('now');
+    }
+  }, [hover])
 
   function time() {
 
@@ -61,8 +70,10 @@ const Home: React.FC<Props> = (props: Props) => {
 
 
         <section className="portrait">
-          <img /*onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}*/ src={Me} alt='Me' />
-          {/*<p className={hover ? 'show' : 'none'}>Contact Me!</p>*/}
+          <img onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} src={Me} alt='Me' />
+          <div>
+          <p className='right' ref={theHover}>Contact Me!</p>
+          </div>
         </section>
       </div>
     </div>
