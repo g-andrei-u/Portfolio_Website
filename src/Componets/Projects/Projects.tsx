@@ -66,7 +66,7 @@ const Projects: React.FC<Props> = (props: Props) => {
   Animation(projectsPage);
 
   return (
-    <div className={props.mode ? 'home-page home-page-black' : 'home-page home-page-white'}>
+    <div className={props.mode ? 'home-page-p home-page-black' : 'home-page-p home-page-white'}>
       <section className="projects" ref={projectsPage}>
         <div className='filter-buttons'>
           <h2>PROJECTS:</h2>

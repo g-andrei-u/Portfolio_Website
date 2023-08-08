@@ -9,8 +9,9 @@ import bash from '../Images/bash.png';
 import vue from '../Images/Vue.png';
 import php from '../Images/php.png';
 import sass from '../Images/sass.png';
-import laravel from '../Images/Laravel.png';
+import angular from '../Images/Angular.png';
 import node from '../Images/node.png';
+import sql from '../Images/sql.png';
 import { Animation } from '../Common/Animation';
 
 interface Props {
@@ -46,6 +47,9 @@ const Skills: React.FC<Props> = (props: Props) => {
                         <img src={php} /><h4 className='skill-name'>PHP</h4>
                     </div>
                     <div className="skill">
+                        <img src={sql} /><h4 className='skill-name'>SQL</h4>
+                    </div>
+                    <div className="skill">
                         <img src={node} /><h4 className='skill-name'>Node.js</h4>
                     </div>
                     <div className="skill">
@@ -61,7 +65,7 @@ const Skills: React.FC<Props> = (props: Props) => {
                 <h2>Familiar Skills:</h2>
                 <div className="other-skills">
                     <div className="skill">
-                        <img src={laravel} /><h4 className='skill-name'>Laravel</h4>
+                        <img src={angular} /><h4 className='skill-name'>Angular</h4>
                     </div>
                     <div className="skill">
                         <img src={redux} /><h4 className='skill-name'>Redux</h4>
