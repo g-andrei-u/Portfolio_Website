@@ -1,13 +1,25 @@
 import ecom from '../../Images/ecom.png';
 import insta from '../../Images/insta.png';
-import ebike from '../../Images/ebike.png';
+//import ebike from '../../Images/ebike.png';
 import clone from '../../Images/SpaceX.png';
 import jobs from '../../Images/job_platform.png';
 import space from '../../Images/space_agency.png';
 import restaurant from '../../Images/restaurant.png';
+import europe from '../../Images/into-europe.png';
 
 
 export const projects = [
+    {
+        path: '/projects/Into_europe',
+        title: '"Into Europe" Website',
+        image: europe,
+        desc: 'The official site to a youtube channel with over 100k subscribers',
+        stack: [' MongoDB ', ' Express' ,' React.js ', ' Node.js ', ' Sass '],
+        responsive: true,
+        projectLink: 'https://github.com/g-andrei-u/copy',
+        codeLink: 'https://github.com/g-andrei-u/copy'
+    },
+
     {
         path: '/projects/restaurant',
         title: 'Space Restaurant',
@@ -74,7 +86,7 @@ export const projects = [
         codeLink: 'https://github.com/g-andrei-u/Space-Page'
     },
 
-    {
+    /*{
         path: '/projects/ebikes',
         title: 'Shop Landing Page',
         image: ebike,
@@ -83,5 +95,5 @@ export const projects = [
         responsive: true,
         projectLink: 'https://g-andrei-u.github.io/Project_Ebikes/',
         codeLink: 'https://github.com/g-andrei-u/Project_Ebikes'
-    }
+    }*/
 ]
